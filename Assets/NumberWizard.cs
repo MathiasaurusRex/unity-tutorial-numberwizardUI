@@ -22,7 +22,8 @@ public class NumberWizard : MonoBehaviour {
 	void StartGame (){
 		max = 1000;
 		min = 1;
-		NextGuess
+		// random guess
+		guess = Random.Range(min, max);
 
 		NumberWizardText.text = guess.ToString();
 		print("===============================");
